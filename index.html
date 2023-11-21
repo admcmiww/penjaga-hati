@@ -285,9 +285,14 @@
 
 		document.addEventListener("DOMContentLoaded", function () {
 			var audio = document.querySelector("audio");
-			document.addEventListener("click", function () {
+
+			// Display a confirm dialog
+			var userConfirmed = confirm("klik tombol oke 2x di lakukan dengan cepat dan bersamaan untuk memulai lagunya");
+
+			// If the user clicks 'OK', play the audio
+			if (userConfirmed) {
 				audio.play();
-			});
+			}
 		});
 	</script>
 </body>
